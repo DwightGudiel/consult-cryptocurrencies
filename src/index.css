@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/* para usar mejor box model */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 10em;
+  color: white;
+  background-color: #202020;
+}
