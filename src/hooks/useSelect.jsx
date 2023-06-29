@@ -6,6 +6,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 2rem 0rem;
+  background-color: rgba(1, 42, 78, 0.5);
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -17,28 +20,29 @@ const Select = styled.select`
   width: 100%;
   padding: 0.5rem 2rem;
   border-radius: 10px;
-  background-color: #3b3b3b;
-  color: white;
+  background-color: white;
+  font-weight:bold;
+  font-size: 1.7rem;
 `;
 
 const Label = styled.label`
   width: 100%;
   font-weight: bold;
-  font-size: 2rem;
-  color: rgb(100 205 255);
+  font-size: 1.7rem;
+  color:  white;
 
   margin-bottom: 2rem;
   @media (min-width: 768px) {
     margin-bottom: 0;
   }
 
-  &::after {
+  /* &::after {
     content: "";
     width: 10rem;
-    height: 0.1rem;
-    background-color: #fff;
+    height: 0.3rem;
+    background-color: white;
     display: block;
-  }
+  } */
 `;
 
 function useSelect(label, options) {

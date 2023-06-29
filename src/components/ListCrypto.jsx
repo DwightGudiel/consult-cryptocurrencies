@@ -4,10 +4,14 @@ import styled from "@emotion/styled";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background-color: rgba(1, 42, 78, 0.5);
+  border-radius: 2rem;
+  padding: 1rem;
 
   @media (min-width: 769px) {
+    max-width: 60rem;
+    margin: 0 auto;
     flex-direction: row;
     column-gap: 2rem;
   }

@@ -12,10 +12,13 @@ html {
 
 body {
   font-size: 2rem;
-  font-family: "Indie Flower", cursive;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   min-height: 100vh;
   padding-bottom: 10em;
   color: white;
-  background-color: #202020;
+  background-image: url("./img/fondo.webp");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center center;
 }

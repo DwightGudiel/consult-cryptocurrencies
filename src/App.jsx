@@ -11,12 +11,20 @@ import "react-toastify/dist/ReactToastify.css";
 const Container = styled.div`
   width: min(90%, 120rem);
   margin: 0 auto;
+`;
+
+const Titulo = styled.div`
+  width:min( 100%,60rem);
+   margin: 3rem auto;
+  background-color: rgba(1, 42, 78, 0.5);
+  padding: 0.5rem 0;
+  border-radius: 1rem;
 
   h2 {
     text-align: center;
-    color: rgb(100 205 255);
-    font-size: 3rem;
-    margin-top: 5rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
   }
 `;
 
@@ -24,8 +32,8 @@ const Header = styled.h1`
   text-align: center;
   margin: 0 0 5rem 0;
   padding: 1rem;
-  color: rgb(100 205 255);
-  border-bottom: solid 2px rgba(231, 233, 235, 0.2);
+  font-size: 3rem;
+  color: white;
 `;
 
 function App() {
@@ -39,7 +47,6 @@ function App() {
       if (Object.keys(coinsObj).length > 0) {
         // Consultar API de criptomonedas
         const consultApiCrypto = async () => {
-          
           // Mostrar spinner
           setSpinner(true);
 
@@ -71,9 +78,13 @@ function App() {
       <Container>
         <FormCrypto setCoinsObj={setCoinsObj} />
         {dataCryptoObj.PRICE ? (
-          <h2>Resultado de la consulta</h2>
+          <Titulo>
+            <h2>Resultado de la consulta</h2>
+          </Titulo>
         ) : (
-          <h2>El resultado se mostrará aquí</h2>
+          <Titulo>
+            <h2>El resultado se mostrará aquí</h2>
+          </Titulo>
         )}
         {spinner ? (
           <Spinner />
